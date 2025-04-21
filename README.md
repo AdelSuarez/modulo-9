@@ -5,7 +5,7 @@
 npm create astro@latest -- --template basics
 ``` -->
 
-![Background m9](/src/assets/m9.png)
+![Background m9](/public/m9.png)
 
 Module 9 is an application to manage the subjects and evaluations of a university semester.
 
