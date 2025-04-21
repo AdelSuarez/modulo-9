@@ -9,6 +9,12 @@ npm create astro@latest -- --template basics
 
 Module 9 is an application to manage the subjects and evaluations of a university semester.
 
+**Features:**
+
+- Create and manage semesters, their subjects and assessments
+- Schedule creations
+- Assessment calendar management
+
 <!--
 ## 🚀 Project Structure
 
