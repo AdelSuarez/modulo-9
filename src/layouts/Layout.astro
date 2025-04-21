@@ -1,20 +1,40 @@
+---
+interface Props {
+	// Define any props you want to pass to the layout
+	title?: string;
+}
+
+const { title = 'Modulo 9' } = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
+		<meta name="description" content="Modulo 9" />
+		<meta name="author" content="Modulo 9" />
+		<meta name="keywords" content="Modulo 9" />
+		<link rel="icon" href="/src/assets/icon.ico" type="image/x-icon" />
 	</head>
 	<body>
-		<slot />
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
 
 <style>
-	html,
-	body {
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	main {
 		margin: 0;
 		width: 100%;
 		height: 100%;
