@@ -1,0 +1,14 @@
+---
+import '../styles/button.css'
+
+interface Props {
+    text?: string;
+    id?: string;
+}
+
+const { text = 'Button', id = 'button' } = Astro.props;
+---
+
+<button id={id}>
+    {text}
+</button>

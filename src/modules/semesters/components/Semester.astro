@@ -1,0 +1,109 @@
+---
+import '../styles/semester.css'
+import ItemCourse from './ItemCourse.astro'
+---
+
+<section class="semester-container">
+    <div class="semester-header">
+        <h2>4to Semestre</h2>
+        <div class="semester-header-actions">
+            <p>Promedio: 8.5</p>
+            <span id="btn-delete-semester" class="material-icons">delete</span>
+        </div>
+    </div>
+    <div class="semester-title-courses">
+        <h3>Materias</h3>
+        <hr>
+    </div>
+    
+    <div class="semester-table-container">
+    <table>
+        <thead>
+            <tr>
+                <th class="th-name">Nombre</th>
+                <th>NRC</th>
+                <th>Promedio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ItemCourse 
+                name="Física"
+                nrc="67890"
+                average={9.0}
+            ></ItemCourse>
+            <ItemCourse 
+                name="Matemáticas"
+                nrc="12345"
+                average={10.0}
+            ></ItemCourse>
+            <ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse><ItemCourse 
+                name="Calculo"
+                nrc="66789"
+                average={11.0} 
+            ></ItemCourse>
+        </tbody>
+    </table>
+        </div>
+
+</section>

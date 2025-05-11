@@ -1,8 +1,16 @@
 ---
 import iconImage from '../../assets/icon-512-maskable.png';
 import '../styles/header.css'
+import Button from './Button.astro';
 ---
 
 <header class="header">
-   <img src={iconImage.src} alt="">
+   <div class="header-content">
+      <img src={iconImage.src} alt="">
+      <h2>Modulo 9</h2>
+   </div>
+   <Button  
+      text="Nuevo Semestre"
+      id="nuevo-semestre">
+   </Button>
 </header>

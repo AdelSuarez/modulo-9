@@ -1,23 +1,17 @@
 ---
-import '../styles/home.css'
+import './styles/home.css'
 import Header from '../shared/components/Header.astro'
+import AsideSemesters from '../shared/components/AsideSemesters.astro'
+import Semester from '../modules/semesters/components/Semester.astro'
 ---
 <!-- This is the Home component -->
   
 <div class="background">
-    <div class="grid-overlay">
-      
-    </div>
+  <Header></Header>
+  <div class="home-container">
+    <AsideSemesters></AsideSemesters>
+    <Semester></Semester>
   </div>
-  
-  <div class="background">
-    <div class="conic-gradient"></div>
-    <div class="grid-overlay">
-      <div class="content-home">
-          <!-- <Header></Header> -->
-          <h1>Modulo 9 Preview</h1>
-      </div>
-      
-    </div>
+    
 </div> 
 

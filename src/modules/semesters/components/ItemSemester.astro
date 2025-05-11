@@ -1,0 +1,29 @@
+---
+import '../styles/item-semester.css'
+
+interface Props {
+    title: string;
+    subjects: number;
+    average: number;
+    isFavorite?: boolean;
+}
+const { title, subjects, average, isFavorite = false }: Props = Astro.props;
+---
+
+<div class="item-semester">
+    <div class="item-semester-header">
+        <h3>
+            {title}
+        </h3>
+        {isFavorite ? <span class="material-icons">favorite</span> : <span class="material-icons">favorite_border</span>}
+        
+    </div>
+    <div class="item-semester-content">
+        <p>
+            Materias: {subjects}
+        </p>
+        <p>
+            Promedio: {average}
+        </p>
+    </div>
+</div>

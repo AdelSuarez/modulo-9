@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #5469de;
+  --color-border: #9f9f9f;
+  --color-content: #f2f2f2;
+  --color-title-secundary: #515151;
+  --color-title-tertiary: #a0a0a0;
+
+  --color-red: #ff0000;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --font-family-primary: "Inter", sans-serif;
+  --font-family-secundary: "Cal Sans", sans-serif;
+}

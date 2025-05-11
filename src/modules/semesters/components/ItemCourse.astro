@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+  nrc: string;
+  average: number;
+}
+const { name, nrc, average }: Props = Astro.props;
+---
+
+<tr>
+    <td>{name}</td>
+    <td class="td-nrc">{nrc}</td>
+    <td class="td-average">{average}</td>
+    <td class="td-actions"><span class="material-icons">more_horiz</span><span class="material-icons">keyboard_arrow_down</span></td>
+</tr>
