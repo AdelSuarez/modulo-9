@@ -4,11 +4,13 @@ import '../styles/button.css'
 interface Props {
     text?: string;
     id?: string;
+    icon?: string;
 }
 
-const { text = 'Button', id = 'button' } = Astro.props;
+const { text = 'Button', id = 'button', icon='' } = Astro.props;
 ---
 
 <button id={id}>
+    {icon && <span class="material-icons">{icon}</span>}
     {text}
 </button>

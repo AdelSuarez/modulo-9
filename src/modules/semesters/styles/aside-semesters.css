@@ -1,4 +1,4 @@
-@import url("../styles/constants.css");
+@import url("../../../shared/styles/constants.css");
 
 .aside-semesters {
   background-color: var(--color-content);

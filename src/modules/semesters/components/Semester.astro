@@ -1,19 +1,33 @@
 ---
 import '../styles/semester.css'
 import ItemCourse from './ItemCourse.astro'
+import Button from '../../../shared/components/Button.astro'
 ---
 
 <section class="semester-container">
     <div class="semester-header">
-        <h2>4to Semestre</h2>
+        <div class="semester-header-actions">
+            <h2>4to Semestre</h2>
+            <Button 
+                text='Ver horario'
+                id="see-schedule">
+            </Button>
+            
+        </div>        
         <div class="semester-header-actions">
             <p>Promedio: 8.5</p>
+            <span id="btn-favorite-semester" class="material-icons">favorite</span>
             <span id="btn-delete-semester" class="material-icons">delete</span>
         </div>
     </div>
     <div class="semester-title-courses">
         <h3>Materias</h3>
         <hr>
+        <Button 
+            text='Añadir materia'
+            id='add-course'
+            icon='add'>
+        </Button>
     </div>
     
     <div class="semester-table-container">
